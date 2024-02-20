@@ -26,18 +26,26 @@ a {
 }
 .barra-stories {
     display: flex;
-    justify-content: space-around;
     width: 614px;
     height: 114px;
+    overflow: scroll;
 }
 
 .stories {
     width: 78px;
+    margin-right: 4px;
+    flex-shrink: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
 }
 .stories p{
     max-width: 78px;
     max-height: 19px;
     text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .icone-stories {
     position: relative;
@@ -105,4 +113,5 @@ a {
 }
 .sidebar {
     max-width: 293px;
+    background-color: red;
 }
